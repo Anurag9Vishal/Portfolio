@@ -56,7 +56,7 @@ export default function Portfolio() {
         <div style={{ marginTop: "2rem" }}>
           <a href="https://www.linkedin.com/in/anurag-vishal-9a1014248/" className="button button-outline" target="_blank">LinkedIn</a>
           <a href="https://github.com/Anurag9Vishal" className="button button-outline" target="_blank">GitHub</a>
-          <a href="/Resume.pdf" download className="button button-primary">Download Résumé</a>
+          <a href="/Resume" download className="button button-primary">Download Résumé</a>
         </div>
       </section>
 
