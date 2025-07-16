@@ -56,11 +56,27 @@ export default function Portfolio() {
         <div style={{ marginTop: "2rem" }}>
           <a href="https://www.linkedin.com/in/anurag-vishal-9a1014248/" className="button button-outline" target="_blank">LinkedIn</a>
           <a href="https://github.com/Anurag9Vishal" className="button button-outline" target="_blank">GitHub</a>
+          <a href="/Resume.pdf" download className="button button-primary">Download Résumé</a>
         </div>
       </section>
 
       <section className="glass section">
-        <h2 style={{ fontSize: "1.8rem", fontWeight: "600", color: "#1d4ed8" }}>🌟 Highlighted Projects</h2>
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "600", color: "#1d4ed8" }}>Work Experience</h2>
+        <div style={{ marginTop: "1.5rem" }}>
+          <div style={{ backgroundColor: "#ffffff", borderRadius: "8px", padding: "1.5rem", boxShadow: "0 2px 12px rgba(0,0,0,0.05)" }}>
+            <h3 style={{ fontWeight: "600", color: "#0f172a" }}>University of Miami</h3>
+            <p style={{ fontSize: "0.95rem", color: "#475569" }}><em>Research Intern – May • Miami, Florida</em></p>
+            <ul style={{ marginTop: "0.75rem", paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
+              <li>Performed advanced data analysis on high-temperature ceramic matrix composites (CMCs), evaluating mechanical properties under load.</li>
+              <li>Developed ML-based predictive models for extreme thermal and oxidative environments.</li>
+              <li>Refined data-driven material design to enhance durability for aerospace applications.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="glass section">
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "600", color: "#1d4ed8" }}>Highlighted Projects</h2>
         <div className="grid" style={{ marginTop: "1.5rem" }}>
           <div>
             <h3 style={{ fontWeight: "600", color: "#0f172a" }}>Hospitality Revenue Insights</h3>
@@ -81,7 +97,7 @@ export default function Portfolio() {
       </section>
 
       <section className="section">
-        <h2 style={{ fontSize: "1.8rem", fontWeight: "600", color: "#1d4ed8" }}>🧠 Skills & Tools</h2>
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "600", color: "#1d4ed8" }}>Skills & Tools</h2>
         <ul style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem", listStyle: "none", marginTop: "1rem", padding: 0 }}>
           {["SQL", "Power BI", "Python", "Seaborn", "Matplotlib", "Sklearn", "Git", "GitHub", "ETL Automation", "Storytelling", "Excel", "RFM Analysis"].map(skill => (
             <li key={skill} style={{ background: "#e0f2fe", color: "#1d4ed8", padding: "0.4rem 0.75rem", borderRadius: "8px", fontSize: "0.9rem" }}>{skill}</li>
@@ -90,7 +106,7 @@ export default function Portfolio() {
       </section>
 
       <footer style={{ padding: "3rem 1rem", textAlign: "center", backgroundColor: "#e2e8f0", marginTop: "4rem" }}>
-        <h2 style={{ fontSize: "1.5rem", fontWeight: "500", color: "#1d4ed8" }}>📬 Get in Touch</h2>
+        <h2 style={{ fontSize: "1.5rem", fontWeight: "500", color: "#1d4ed8" }}>Get in Touch</h2>
         <p>Email: <strong style={{ color: "#0f172a" }}>vishalanurag@alumni.iitgn.ac.in</strong></p>
         <p>Phone: <strong style={{ color: "#0f172a" }}>+91-7738957332</strong></p>
         <p style={{ marginTop: "1rem", fontSize: "0.85rem", color: "#64748b" }}>© {new Date().getFullYear()} Anurag Vishal. All rights reserved.</p>
@@ -98,5 +114,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
